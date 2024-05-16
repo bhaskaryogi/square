@@ -1,9 +1,3 @@
-function square(num) {
-    if (!isNaN(num)) {
-        return num * num
-    }
+const math = require("./math")
 
-    throw Error("Given parameter is not a number")
-}
-
-module.exports = square
+module.exports = math
