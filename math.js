@@ -8,10 +8,10 @@ function square(num) {
 
 function power(num, pow) {
     if (!isNaN(num)) {
-        return num * num
+        return num ** pow
     }
 
-    return num ** pow
+    throw Error("Given parameter is not a number")
 }
 
 module.exports = { square, power }
